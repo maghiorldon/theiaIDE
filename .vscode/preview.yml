@@ -2,5 +2,9 @@
 autoOpen: false
 apps:
   -port: 3000
-   run: chmod +x deploy.sh && bash deploy.sh && lt --port 3000 && yarn theia start --hostname 0.0.0.0 
-   
+   run: chmod +x deploy.sh && bash deploy.sh && lt --port 3000 && cd /workspace/theia-app yarn theia start --hostname 0.0.0.0 
+   root: /workspace
+   name: theia
+   description: IDE
+   autoOpen: true
+   autiPreview: false
