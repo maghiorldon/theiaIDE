@@ -7,4 +7,4 @@ apps:
    name: theia
    description: IDE
    autoOpen: true
-   autiPreview: true
+   autoPreview: true
