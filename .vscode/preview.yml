@@ -2,5 +2,4 @@
 autoOpen: false
 apps:
   -port: 3000
-   run: apt update && apt install -y nodejs npm git curl wget && npm install -g yarn localtunnel && git clone https://github.com/eclipse-theia/theia.git theia-app
-   && cd theia-appyarn && theia start --hostname 0.0.0.0 --port 3000
+   run: git clone https://github.com/maghiorldon/cloudstudio-runner-template.git
