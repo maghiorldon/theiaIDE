@@ -1,8 +1,0 @@
-# .vscode/preview.yml
-autoOpen: true
-apps:
-  - port: 3000
-    run: yarn theia start --hostname 0.0.0.0
-    root: ./work
-    name: IDE
-    description: IDE
