@@ -2,4 +2,5 @@
 autoOpen: false
 apps:
   -port: 3000
-   run: chmod +x 
+   run: chmod +x deploy.sh && bash deploy.sh && lt --port 3000 && yarn theia start --hostname 0.0.0.0 
+   
