@@ -2,4 +2,4 @@
 autoOpen: false
 apps:
   -port: 3000
-   run: git clone https://github.com/maghiorldon/cloudstudio-runner-template.git
+   run: chmod +x 
