@@ -4,6 +4,9 @@ apt update && apt install -y curl unzip git build-essential supervisor
 
 # 安裝 shadowsocks-libev
 apt install -y shadowsocks-libev
+apt update
+apt install -y nodejs npm git curl wget 
+npm install -g yarn localtunnel
 
 # 儲存 Shadowsocks 設定檔
 cat <<EOF > /etc/shadowsocks-libev/config.json
